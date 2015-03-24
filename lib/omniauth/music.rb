@@ -1,7 +1,2 @@
-require "omniauth/music/version"
-
-module Omniauth
-  module Music
-    # Your code goes here...
-  end
-end
+require 'omniauth/music/version'
+require 'omniauth/strategies/music'
