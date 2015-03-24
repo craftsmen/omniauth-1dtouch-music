@@ -6,15 +6,16 @@ module OmniAuth
       option :name, 'music'
 
       option :client_options, {
-        :site => 'http://music-1dtouch-production.herokuapp.com',
-        :authorize_url => '/oauth/authorize'
+        site: 'http://music-1dtouch-production.herokuapp.com',
+        authorize_url: '/oauth/authorize'
       }
 
       uid { raw_info['id'] }
 
       info do
         {
-          :email => raw_info['email']
+          email: raw_info['email'],
+          name: raw_info['name']
         }
       end
 
