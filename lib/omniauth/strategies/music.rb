@@ -3,10 +3,10 @@ require 'omniauth-oauth2'
 module OmniAuth
   module Strategies
     class Music < OmniAuth::Strategies::OAuth2
-      option :name, :music
+      option :name, 'music'
 
       option :client_options, {
-        :site => 'music-1dtouch-production.herokuapp.com',
+        :site => 'http://music-1dtouch-production.herokuapp.com',
         :authorize_url => '/oauth/authorize'
       }
 
