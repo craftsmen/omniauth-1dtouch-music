@@ -5,7 +5,7 @@ describe OmniAuth::Strategies::Music do
     end
 
     it 'returns correct default site' do
-      expect(stubbed_strategy.options.client_options.site).to eq('http://music-1dtouch-production.herokuapp.com')
+      expect(stubbed_strategy.options.client_options.site).to eq('http://music.1dtouch.com')
     end
 
     it 'returns correct given site' do

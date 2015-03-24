@@ -6,7 +6,7 @@ module OmniAuth
       option :name, 'music'
 
       option :client_options, {
-        site: 'http://music-1dtouch-production.herokuapp.com',
+        site: 'http://music.1dtouch.com',
         authorize_url: '/oauth/authorize'
       }
 
