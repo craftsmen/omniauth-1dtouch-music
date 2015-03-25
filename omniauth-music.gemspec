@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Sébastien Charrier']
   spec.email         = ['sebastien@craftsmen.io']
 
-  spec.summary       = 'Omniauth strategy for 1DTouch Music app'
+  spec.summary       = 'Omniauth strategy for 1D touch Music app'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
