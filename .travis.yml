@@ -10,9 +10,4 @@ before_install:
   - gem update bundler
   - bundle --version
 
-notifications:
-  email: false
-  slack:
-    secure: "iV+WDliWjt4GthfrAlg61oW02KBnuSSB1wTPsF1zaD5W4Hi/MchJ/KqoqCWclOufISprPEUgHy40SNLFcAjZaoI5sy1G+nkY2DP/82245kc2cT40/DhVW3Ln0jxEhLC7oAKTyl+IRgfk1pMyIVo/eomiP+cA1EF5dChkGg0BwAk="
-
 script: "bundle exec rspec"
