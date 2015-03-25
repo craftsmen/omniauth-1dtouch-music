@@ -5,10 +5,8 @@ module OmniAuth
     class Music < OmniAuth::Strategies::OAuth2
       option :name, 'music'
 
-      option :client_options, {
-        site: 'http://music.1dtouch.com',
-        authorize_url: '/oauth/authorize'
-      }
+      option :client_options, site: 'http://music.1dtouch.com',
+                              authorize_url: '/oauth/authorize'
 
       uid { raw_info['id'] }
 

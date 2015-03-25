@@ -9,7 +9,7 @@ describe OmniAuth::Strategies::Music do
     end
 
     it 'returns correct given site' do
-      expect(stubbed_strategy(client_options: { site: 'http://somewhereelse.com'}).options.client_options.site).to eq('http://somewhereelse.com')
+      expect(stubbed_strategy(client_options: { site: 'http://somewhereelse.com' }).options.client_options.site).to eq('http://somewhereelse.com')
     end
 
     it 'returns correct authorize url' do
