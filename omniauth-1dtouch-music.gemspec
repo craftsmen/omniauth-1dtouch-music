@@ -8,8 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = OmniAuth::OnedtouchMusic::VERSION
   spec.authors       = ['Sébastien Charrier']
   spec.email         = ['sebastien@craftsmen.io']
-
   spec.summary       = 'Omniauth strategy for 1D touch Music app'
+  spec.description   = 'Omniauth strategy for 1D touch Music app'
+  spec.homepage      = 'http://github.com/craftsmen/omniauth-1dtouch-music'
+  spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = 'exe'
