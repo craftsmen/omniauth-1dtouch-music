@@ -12,4 +12,4 @@ require 'webmock/rspec'
 
 Dir["#{__dir__}/support/**/*.rb"].each { |file| require file }
 
-require 'omniauth/music'
+require 'omniauth-1dtouch-music'

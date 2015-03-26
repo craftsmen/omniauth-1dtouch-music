@@ -1,6 +1,6 @@
 module StrategiesHelper
   def stubbed_strategy(*args)
-    OmniAuth::Strategies::Music.new(nil, *args).tap do |strategy|
+    OmniAuth::Strategies::OnedtouchMusic.new(nil, *args).tap do |strategy|
       allow(strategy).to receive(:request) {
         request
       }

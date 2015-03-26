@@ -1,7 +1,7 @@
-describe OmniAuth::Strategies::Music do
+describe OmniAuth::Strategies::OnedtouchMusic do
   describe 'configuration' do
     it 'returns correct name' do
-      expect(stubbed_strategy.options.name).to eq('music')
+      expect(stubbed_strategy.options.name).to eq('onedtouch_music')
     end
 
     it 'returns correct default site' do

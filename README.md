@@ -1,4 +1,4 @@
-# Omniauth::Music
+# Omniauth::OnedtouchMusic
 
 This gem contains the OmniAuth strategy to authenticate against http://music.1touch.com.
 
@@ -15,31 +15,32 @@ You should have an API Key and API Secret for Music app. This is what your web a
 First start by adding this gem to your Gemfile:
 
 ```ruby
-gem 'omniauth-music'
+gem 'omniauth-1dtouch-music'
 ```
 
 If you need to use the latest HEAD version, you can do so with:
 
 ```ruby
-gem 'omniauth-music', :github => 'craftsmen/omniauth-music'
+gem 'omniauth-1dtouch-music', :github => 'craftsmen/omniauth-1dtouch-music'
 ```
 
 Next, tell OmniAuth about this provider. For a Rails app, your `config/initializers/omniauth.rb` file should look like this:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :music, "API_KEY", "API_SECRET"
+  provider :onedtouch_music, "API_KEY", "API_SECRET"
 end
 ```
 
 Replace `"API_KEY"` and `"API_SECRET"` with the appropriate values.
 
 ## Authentication Hash
+
 An example auth hash available in `request.env['omniauth.auth']`:
 
 ```ruby
 {
-  provider: "music",
+  provider: "onedtouch_music",
   uid: "123456",
   info: {
     name: "Jim Morrison",
@@ -61,7 +62,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
 
 ## Supported Rubies
 
-OmniAuth Music is tested under 2.2.1.
+Tested under 2.2.1.
 
 ## License
 

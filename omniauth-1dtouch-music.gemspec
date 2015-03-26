@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/music/version'
+require 'omniauth/1dtouch-music/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'omniauth-music'
-  spec.version       = OmniAuth::Music::VERSION
+  spec.name          = 'omniauth-1dtouch-music'
+  spec.version       = OmniAuth::OnedtouchMusic::VERSION
   spec.authors       = ['Sébastien Charrier']
   spec.email         = ['sebastien@craftsmen.io']
 

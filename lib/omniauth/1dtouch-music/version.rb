@@ -1,5 +1,5 @@
 module OmniAuth
-  module Music
+  module OnedtouchMusic
     VERSION = '1.0.0'
   end
 end

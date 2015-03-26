@@ -2,8 +2,8 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class Music < OmniAuth::Strategies::OAuth2
-      option :name, 'music'
+    class OnedtouchMusic < OmniAuth::Strategies::OAuth2
+      option :name, 'onedtouch_music'
 
       option :client_options, site: 'http://music.1dtouch.com',
                               authorize_url: '/oauth/authorize'
