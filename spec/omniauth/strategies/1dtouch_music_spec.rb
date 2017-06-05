@@ -37,5 +37,14 @@ describe OmniAuth::Strategies::OnedtouchMusic do
       expect(strategy.info[:name]).to eq('Jim Morrison')
       expect(strategy.info[:email]).to eq('theblue@b.us')
     end
+
+    it 'extracts level from raw info' do
+      strategy = stubbed_strategy
+      allow(strategy).to receive(:raw_info).and_return(
+        'level' => 'user'
+      )
+
+      expect(strategy.extra[:level]).to eq('user')
+    end
   end
 end

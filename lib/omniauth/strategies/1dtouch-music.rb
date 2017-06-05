@@ -17,6 +17,12 @@ module OmniAuth
         }
       end
 
+      extra do
+        {
+          level: raw_info['level']
+        }
+      end
+
       def raw_info
         @raw_info ||= access_token.get('/api/v1/me.json').parsed
       end

@@ -54,7 +54,8 @@ An example auth hash available in `request.env['omniauth.auth']`:
     access_token: "", # An OAuth::AccessToken object
     raw_info: {
       name: "Jim Morrison",
-      email: "theblue@b.us"
+      email: "theblue@b.us",
+      level: "user"
     }
   }
 }
@@ -62,7 +63,7 @@ An example auth hash available in `request.env['omniauth.auth']`:
 
 ## Supported Rubies
 
-Tested under 2.2.1.
+Tested under 2.3.1.
 
 ## License
 
